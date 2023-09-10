@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Login Page </title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: rgb(227, 255, 175);
+            background-image:('A:\EDD Project\images\bg1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        button {
+            background-color: #ff49a1;
+            width:20%;
+            color: rgb(0, 0, 0);
+            padding: px;
+            margin: 10px 0px;
+            border: 5px;
+            cursor: pointer;
+        }
+
+        form {
+            text-align: left;
+            width: 60%;
+            border: 3px solid #44ff92;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid rgb(0, 77, 0);
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+        h1{font-family: Arial, Helvetica, sans-serif;
+           color: #16671d;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            padding: 25px;
+            background-color: rgb(220, 255, 175);
+        }
+    </style>
+</head>
+
+<body background="..\images\bg1.jpg">
+    <center>
+        <h1> Farmers Login Form </h1>
+  
+    <form>
+        <div class="container">
+            <label>Username : </label>
+            <input type="text" placeholder="Enter Gmail" name="username" required>
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">
+                <h2>Login</h2>
+            </button>
+            <input type="checkbox" checked="checked"> Remember me
+            <button type="button" class="cancelbtn"> Cancel</button>
+            Forgot <a href="#"> password? </a>
+        </div>
+    </form>
+    </center>
+</body>
+
+</html>

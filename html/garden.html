@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>P2C</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS property for header section */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(180, 255, 180);
+            padding: 8px;
+            text-align: center;
+            color: rgb(0, 90, 60);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .img {
+            margin: 8px 8px;
+        }
+
+        body {
+            background-color: rgba(255, 255, 255, 0.816);
+        }
+
+        .btn {
+            font-size: medium;
+            font-family: sans-serif;
+            color: #ffffff;
+            border: none;
+            background-color: rgb(18, 215, 57);
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+        button {
+            background-color: rgb(31, 25, 44);
+            border: 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #fff;
+            font-family: inherit;
+            font-size: 14px;
+            padding: 10px 25px;
+        }
+        #btnside {
+            text-align: right;
+        }
+
+        .btn {
+            transition-duration: 0.4s;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            background-color: rgb(77, 171, 79);
+            height: 200px;
+        }
+
+
+        .btn:hover {
+            background-color: #d2ff70;
+            /* Green */
+            color: rgb(255, 27, 2);
+        }
+
+        .buy {
+            background-color: orange;
+            float:right;
+            padding: 7px 9px;
+            margin-right: 5px;
+            display: inline;
+            border: 5px;
+            border-radius: 3px;
+        }
+
+
+        .buy:hover {
+            background-color: #6b6968;
+            /* Green */
+            color: rgb(31, 3, 0);
+        }
+
+        .card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 25px;
+            padding: 5px;
+            transition: 0.3s;
+            border-radius: 5px;
+            /* 5px rounded corners */
+        }
+
+        /* Add rounded corners to the top left and the top right corner of the image */
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+            display: inline;
+            padding: 2px 16px;
+        }
+
+        /* CSS property for navigation menu */
+        .nav_menu {
+            overflow: hidden;
+            background-color: rgb(77, 171, 79);
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+        }
+
+        .nav_menu a {
+            float: left;
+
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav_menu a:hover {
+            background-color: white;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header of website layout -->
+    <header>
+        <img align="left" src="..\images\logoa.jpg" alt="logo" width="17%">
+        <h1 style="margin-top:2em;"> AgriPro </h1>
+        <h4><i>Improving Agriculture, Improves Lives.</i></h4>
+        <div id="btnside">
+            <a href=".\Signup.html"><button class="btn">Sign up</button> </a>
+        </div>
+
+    </header>
+
+    <!-- navigation menu for website layout -->
+    <div class="nav_menu">
+        <a href="..\index.html">Home</a>
+        <a href=".\organic.html">Organic Fertilizers</a>
+        <a href=".\garden.html">Gardens Fertilizers</a>
+    </div>
+    <main>
+
+        <div class="card">
+            <img src="..\images\garden2.jpg" alt="gardenferti2" style="width:15%">
+            <div class="container">
+                <h4><b>BLOOMBUDDY</b></h4><br>
+                <p><i> Organic Growth Booster Fertilizer Manure for plants (1 KG, Granules), Pack of 1</i></p><br>
+                <p><big>M.R.P.: ₹285/-</big><a href="#">
+                    <button class="buy">Add to cart </button>
+                    <button class="buy">BUY NOW</button></a></p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="..\images\garden1.jpg" alt="gardenferti" style="width:15%">
+            <div class="container">
+                <h4><b>Utkarsh NPK</b></h4><br>
+                <p><i>Utkarsh NPK (19 : 19 : 19) (900 gm) (Speciality Crystalline 100% Water Soluble Complex
+                    Fertilizer)(Foliar
+                    Spray Nutrition)</i></p><br>
+                <p><big>M.R.P.: ₹310/-</big> <a href="#">
+                    <button class="buy">Add to cart </button>
+                    <button class="buy">BUY NOW</button></a></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="..\images\garden3.jpg" alt="gardenferti3" style="width:15%">
+            <div class="container">
+                <h4><b>Casa De Amor</b></h4><br>
+                <p><i>Casa De Amor Flower Booster Special Essential Fertilizer for Flower Plants (900 gm)</i></p><br>
+                <p><big>M.R.P.: ₹285/-</big><a href="#">
+                    <button class="buy">Add to cart </button>
+                    <button class="buy">BUY NOW</button></a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"><br><br>&copy Copyright 2023 Agrido
+        <br><br>
+        Contact us : Agriprohelp@gmail.com | +91 2233445566
+    </footer>
+</body>
+
+</html>

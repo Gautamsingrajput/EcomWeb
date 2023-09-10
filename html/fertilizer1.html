@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>P2C</title>
+
+<head>
+    <!--Agrido CODE-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS property for header section */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(180, 255, 180);
+            padding: 8px;
+            text-align: center;
+            color: rgb(0, 90, 60);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .img {
+            margin: 8px 8px;
+        }
+
+        .btn {
+            font-size: medium;
+            font-family: sans-serif;
+            color: #ffffff;
+            border: none;
+            background-color: rgb(18, 215, 57);
+            padding: 15px 20px;
+            display: inline-block;
+        }
+
+        #btnside {
+            text-align: right;
+        }
+
+        .btn {
+            transition-duration: 0.4s;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+            background-color: rgb(77, 171, 79);
+            height: 200px;
+        }
+
+        .btn:hover {
+            background-color: #fff67e;
+            /* Green */
+            color: rgb(255, 27, 2);
+        }
+
+        #open {
+            background-color: rgb(255, 183, 50);
+            color: rgb(84, 0, 71);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 9px 13px;
+            border: 5px;
+        }
+
+        #open:hover {
+            background-color: #ff5900;
+            /* Green */
+            color: rgb(48, 5, 0);
+        }
+
+        /* CSS property for navigation menu */
+        .nav_menu {
+            overflow: hidden;
+            background-color: rgb(77, 171, 79);
+        }
+
+        .nav_menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .nav_menu a:hover {
+            background-color: white;
+            color: green;
+        }
+
+        #pro {
+            display: inline;
+            
+        }
+
+        .info {
+            text-align: left;
+            display: inline-block;
+            width: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+        button {
+            background-color: rgb(31, 25, 44);
+            border: 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #fff;
+            font-family: inherit;
+            font-size: 14px;
+            padding: 10px 25px;
+        }
+
+        .modal-container {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .modal-container.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-inner {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 75px 50px;
+            text-align: center;
+            height: 20em;
+            width: 500px;
+
+            /* 	transform: translateY(-200%); */
+            /* 	transition: transform 0.3s ease; */
+        }
+
+
+        .modal-inner h1 {
+            margin: 0;
+        }
+
+        .modal-inner p {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        input {
+            height: 3em;
+            width: 250px;
+            outline: none;
+            padding-left: 1em;
+            margin-top: 1em;
+        }
+
+        .submit {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ff7c3b;
+            border-radius: 2%;
+            margin-top: 15px;
+            width: 40%;
+            border: none;
+        }
+
+        .submit:hover {
+            background-color: #f19878;
+            color: rgb(255, 249, 249);
+        }
+
+        span {
+
+            float: right;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1;
+            margin: 20px 25px 0;
+            color: rgba(0, 0, 0, 0.6);
+            text-shadow: none;
+            opacity: .5;
+            cursor: pointer;
+            height: 10px;
+        }
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- header of website layout -->
+    <header>
+        <img align="left" src="..\images\logoa.jpg" alt="logo" width="17%">
+        <h1 style="margin-top:2em;"> AgriPro </h1>
+        <h4><i>Improving Agriculture, Improves Lives.</i></h4>
+        <div id="btnside">
+            <a href=".\Signup.html"><button class="btn">Sign up</button> </a>
+        </div>
+
+    </header>
+
+    <!-- navigation menu for website layout -->
+    <div class="nav_menu">
+        <a href="..\index.html">Home</a>
+        <a href=".\organic.html">Organic Fertilizers</a>
+        <a href=".\garden.html">Garden Fertilizers</a>
+    </div>
+    <div id="pro">
+        <img src="..\images\fertilizer13.jpg" alt="ferti1" width="30%" >
+    </div>
+    <div class="info">
+        <p>OrganicDews Liquid Seaweed Concentrate for Plants 250 ml with Measuring Cup 25 ml Fertilizer for All Indoor
+            and Outdoor Plants
+
+        <p style="color: orange;">Discount: 30% </p>
+        <p><big>Price: ₹242</big></p>
+        <ul>
+            <li>Brand: OrganicDews</li>
+            <li>Item Weight: 0.79 Pounds</li>
+            <li>Item Form: Liquid</li>
+            <li>Liquid Volume: 0.25 Litres</li>
+            <li> Specific Uses For Product: Plant Growth</li>
+        </ul>About this item:<br>
+        <p>
+            ENRICH SOIL: Increases microorganisms in the soil that can invoke nitrogen from the air. Reduce salt
+            content,breakthrough mineralized layer and effectively solve the soil salinization caused by over
+            fertilization.
+            INCREASE GROWTH: Improves seed germination and increases root growth development. Hence producing quality
+            flowers and tasty fruits.<br>
+            BALANCE NUTRITION: Promotes balanced growth of plants and increases bloom set and size of flowers & fruits.
+            It contains Nitrogen, Potassium, Phosphorus that required by plant growth, and chelating trace elements like
+            Calcium, Magnisum, Zinc, Boron, Molybdenum, etc. which supply all nutrition in balance.<br>
+            DISEASE RESISTANCE: Boosts the immunity and resistance in plants against drought resistence, frost
+            protection and stress recovery.<br>
+            DIRECTION TO USE: To make 1 Liter of seaweed Liquid Spray for plants. STEP: 1 Take 3ml of Seaweed liquid
+            extract (Concentrate) and add it to 1 liter of plain water. STEP: 2 Mix them thoroughly until it’s mixed
+            very well. STEP: 3 spray the diluted seaweed liquid all over the plant or apply directly to the Soil. NOTE:
+            Apply the seaweed liquid spray on the plants before sunrise or after sunset. To avoid leaf burn.<br></p>
+    </div>
+    <button id='open'>Buy now</button>
+
+    <div class="modal-container" id="modal_container">
+        <div class="modal">
+            <span id="close"> X </span>
+            <div class="modal-inner">
+                <h1>Enter the details below</h1>
+                <p style="font-family: cursive;">Thanks for choosing us...</p>
+                <form method="post" name="google-sheet">
+                    <input type="text" name="Name" placeholder="*Enter Your Name" required>
+                    <input type="text" name="Pincode" placeholder="*Enter Pincode" required>
+                    <input type="text" name="Delivery Address" placeholder="*Delivery Address" required>
+                    <input type="text" name="Phone Number" placeholder="*Phone Number" required><br>
+                    <input type="Submit" class="submit" value="Submit" name="Submit" required>
+                </form>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMCG0CiseZ3KhL5Uo5FrURo1X-yJscvybv2csrBCMbSykeT5jgwZ_bNxrt37axDssf/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Your data has been saved ! Wait for OTP confirmation...") )
+                .then(window.location="buffer.html")
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <footer><br><br>&copy Copyright 2023 Agrido
+        <br><br>
+        Contact us : Agridohelp@gmail.com OR +91 2233445566
+
+    </footer>
+</body>
+<script>
+    const open = document.getElementById('open');
+    const close = document.getElementById('close');
+    const modal = document.getElementById('modal_container');
+
+    open.addEventListener('click', () => {
+        modal.classList.add('show');
+    });
+
+    close.addEventListener('click', () => {
+        modal.classList.remove('show');
+    });
+
+
+</script>
+
+</html>

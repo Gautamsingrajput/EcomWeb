@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login Page in HTML with CSS Code Example</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="\css\signstyle.css">
+
+</head>
+
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="box-form">
+		<div class="left">
+			<div class="overlay">
+				<h1>Sign up</h1><br>
+				<p>“Agriculture was the first occupation of man, and as it embraces the whole earth, it is the
+					foundation of all other industries.”
+				</p>
+				<p style="text-align: right;">– E.W. Stewart</p>
+				<span>
+					<p>Sign in with social media</p>
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Sign in with Twitter</a>
+				</span>
+			</div>
+		</div>
+
+
+		<div class="right">
+			<h5>Sign up</h5>
+			<p>Already have an account? <a href=".\login2.html">Login Your Account</a></p>
+			<div class="inputs">
+				<form method="post" name="google-sheet">
+					<input type="text" name="Email" placeholder="*Enter your email" required>
+					<input type="password" name="Password" placeholder="*Create password" required>
+					<input type="submit" class="submit" value="Submit" name="submit">
+				</form>
+			</div>
+		</div>
+
+	</div>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbyIsLqN66fSg80YgVVjx62Tv_goXC7fkZixhixh2C4224Xb-wRRbzDTinXSdZ0hfb05hQ/exec'
+		const form = document.forms['google-sheet']
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => alert("Your data has been saved !"))
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+
+</body>
+
+</html>
